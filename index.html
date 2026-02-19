@@ -1,105 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>River Tisman | Climate Strategy & Energy Economics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            max-width: 800px;
-            margin: 60px auto;
-            padding: 0 20px;
-            line-height: 1.6;
-            color: #111;
-            background-color: #ffffff;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 0;
-        }
-
-        h2 {
-            margin-top: 50px;
-            font-size: 1.4em;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 8px;
-        }
-
-        .subtitle {
-            color: #555;
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-
-        a {
-            color: #000;
-            text-decoration: none;
-            border-bottom: 1px solid #000;
-        }
-
-        a:hover {
-            opacity: 0.7;
-        }
-
-        .project {
-            margin-top: 20px;
-        }
-
-        .footer {
-            margin-top: 60px;
-            font-size: 0.9em;
-            color: #666;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-    </style>
+    <title>River Tisman | Economics & Sustainability Strategy</title>
+    <meta name="description"
+        content="Portfolio of River Tisman - Economics student focused on climate strategy, freight electrification, and energy transition modeling.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
+    <div class="cursor-glow"></div>
 
-    <h1>River Tisman</h1>
-    <div class="subtitle">Climate Strategy & Energy Economics</div>
+    <nav class="navbar">
+        <div class="logo">RT</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact" class="btn-primary">Contact</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i data-lucide="menu"></i>
+        </div>
+    </nav>
 
-    <p>
-        I am an Economics student at Stony Brook University focused on climate strategy, freight electrification, and energy transition modeling. My work centers on translating sustainability data into operational and financial insights through quantitative analysis. I build emissions and scenario models using Python and Excel to evaluate decarbonization pathways in logistics and energy systems. I am pursuing roles where economic reasoning and sustainability strategy intersect in real-world implementation.
-    </p>
+    <header class="hero">
+        <div class="hero-content fade-in-up">
+            <p class="subtitle">Hello, I'm</p>
+            <h1>River Tisman</h1>
+            <h2>Economics Student & <span class="highlight">Sustainability Strategist</span></h2>
+            <p class="bio-text">
+                Translating sustainability data into operational and financial insights.
+                Focusing on climate strategy, freight electrification, and energy transition modeling.
+            </p>
+            <div class="cta-group">
+                <a href="#contact" class="btn-primary">Get in Touch</a>
+                <a href="River_Tisman_Resume.pdf" target="_blank" class="btn-secondary">View Resume <i
+                        data-lucide="arrow-up-right"></i></a>
+            </div>
+        </div>
+        <div class="hero-visual fade-in-up delay-200">
+            <div class="abstract-shape"></div>
+        </div>
+    </header>
 
-    <h2>Selected Project</h2>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am an Economics student at <strong>Stony Brook University</strong> (Dec 2025) with a passion
+                        for solving complex problems at the intersection of economic reasoning and sustainability
+                        strategy.
+                    </p>
+                    <p>
+                        My work centers on building emissions and scenario models to evaluate decarbonization pathways
+                        in logistics and energy systems. I leverage tools like <strong>Python</strong> and
+                        <strong>Excel</strong> to turn raw data into actionable insights.
+                    </p>
+                    <p>
+                        Recently, I studied abroad at the <strong>American College of Greece</strong>, expanding my
+                        global perspective on business and economics. I am currently pursuing roles where I can drive
+                        real-world implementation of sustainable strategies.
+                    </p>
+                </div>
+                <div class="education-card glass-card">
+                    <h3><i data-lucide="graduation-cap"></i> Education</h3>
+                    <div class="edu-item">
+                        <h4>Stony Brook University</h4>
+                        <p class="degree">B.A. in Economics</p>
+                        <p class="date">Expected Dec 2025 | GPA: 3.7</p>
+                        <p class="coursework">Relevant Coursework: Econometrics, Economics in the Environment, Game
+                            Theory, Industrial Organization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="project">
-        <strong>Electrifying Oatly’s Distribution Network</strong>
-        <p>
-            Built a Python-based emissions model using publicly available sustainability data to evaluate the decarbonization potential of diesel-heavy distribution. Reverse-engineered production volume, isolated transport emissions, and modeled phased electrification scenarios (25–100%) with a 5-year implementation roadmap.
-        </p>
-        <ul>
-            <li>Modeled 30,000+ tCO2e annual reduction potential</li>
-            <li>Scenario-based electrification transition modeling</li>
-            <li>Tools: Python, pandas, numpy, matplotlib</li>
-        </ul>
-        <p>
-            <a href="https://github.com/RivTiz">View Project Code on GitHub</a>
-        </p>
-    </div>
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <!-- Experience Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="job-header">
+                            <div>
+                                <h3>Barbuto Brooklyn at the 1 Hotel</h3>
+                                <p class="role">Sustainable Champion of F&B Division, Bartender</p>
+                            </div>
+                            <span class="date">July 2025 - Present</span>
+                        </div>
+                        <ul class="job-details">
+                            <li>Selected for opening team under Chef Jonathan Waxman; established service standards and
+                                operational workflows.</li>
+                            <li>Led monthly sustainability initiatives, implementing waste-reduction systems and
+                                reducing single-use plastics.</li>
+                            <li>Developed original cocktail builds and refined specifications for the bar menu.</li>
+                        </ul>
+                    </div>
+                </div>
 
-    <h2>Technical Skills</h2>
-    <p>
-        Python | pandas | numpy | Excel | Emissions Modeling | Scenario Analysis | Econometrics
-    </p>
+                <!-- Experience Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="job-header">
+                            <div>
+                                <h3>Elegant Affairs Catering</h3>
+                                <p class="role">Event Captain</p>
+                            </div>
+                            <span class="date">April 2023 - Present</span>
+                        </div>
+                        <ul class="job-details">
+                            <li>Collaborate with teams of up to 200 staff to serve 1,000+ guests at high-profile events.
+                            </li>
+                            <li>Maintain 96% customer satisfaction rate through strict attention to detail and
+                                personalized service.</li>
+                            <li>Partner with planners and vendors to ensure seamless logistical coordination.</li>
+                        </ul>
+                    </div>
+                </div>
 
-    <h2>Contact</h2>
-    <p>
-        <a href="https://www.linkedin.com/in/rtisman/" target="_blank">LinkedIn</a><br>
-        <a href="mailto:Rivertisman@gmail.com">Rivertisman@gmail.com</a><br>
-        <a href="River_Tisman_Resume.pdf.pdf" target="_blank">Resume</a>
-    </p>
+                <!-- Experience Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="job-header">
+                            <div>
+                                <h3>Forage Job Simulations</h3>
+                                <p class="role">Economic Development & Analysis</p>
+                            </div>
+                            <span class="date">Feb 2025</span>
+                        </div>
+                        <ul class="job-details">
+                            <li><strong>NSW Government:</strong> Analyzed workforce data and prepared cost-benefit
+                                analysis for local economic development funding.</li>
+                            <li><strong>City of Moreton Bay:</strong> Completed council team simulation involving
+                                marketing, event promotion, and content creation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="footer">
-        Brooklyn, NY
-    </div>
+    <section id="leadership" class="section light-bg">
+        <div class="container">
+            <h2 class="section-title">Leadership</h2>
+            <div class="grid-2">
+                <div class="card glass-card">
+                    <h3>Stony Brook Economics Club</h3>
+                    <p class="role">Vice President (Sep 2023 - Dec 2025)</p>
+                    <p>Co-led strategic planning of academic/career events. Coordinated with faculty to grow membership
+                        and expand presence within the department.</p>
+                </div>
+                <div class="card glass-card">
+                    <h3>Stony Brook Investment Club</h3>
+                    <p class="role">Member (Sep 2023 - Dec 2025)</p>
+                    <p>Developed equity pitch decks based on macroeconomic analysis. Presented recommendations to the
+                        club's review process for the university investment board.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Project Walkthrough</h2>
+
+            <div class="project-walkthrough-container">
+                <div class="walkthrough-controls">
+                    <button id="prevBtn" class="nav-btn" disabled><i data-lucide="chevron-left"></i></button>
+                    <div class="progress-indicators">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button id="nextBtn" class="nav-btn"><i data-lucide="chevron-right"></i></button>
+                </div>
+
+                <div class="walkthrough-scroll" id="walkthroughScroll">
+                    <!-- Slide 1: Context/Challenge -->
+                    <div class="walkthrough-card glass-card">
+                        <div class="card-header">
+                            <span class="step-badge">01. The Challenge</span>
+                            <h3>Electrifying Oatly’s Distribution</h3>
+                        </div>
+                        <p class="card-text">
+                            <strong>Context:</strong> Oatly's distribution relies heavily on diesel transport,
+                            contributing significantly to Scope 3 emissions.
+                        </p>
+                        <p class="card-text">
+                            <strong>Problem:</strong> Lack of granular data on transport emissions and feasible
+                            electrification pathways for their specific logistics network.
+                        </p>
+                        <div class="card-icon">
+                            <i data-lucide="truck" size="48"></i>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Methodology -->
+                    <div class="walkthrough-card glass-card">
+                        <div class="card-header">
+                            <span class="step-badge">02. Methodology</span>
+                            <h3>Data Reconstruction</h3>
+                        </div>
+                        <p class="card-text">
+                            <strong>Approach:</strong> Without direct data, I had to reverse-engineer production volumes
+                            to estimate transport needs.
+                        </p>
+                        <ul class="card-list">
+                            <li><i data-lucide="check-circle"></i> Reverse-engineered production volume</li>
+                            <li><i data-lucide="check-circle"></i> Isolated specific transport emissions factors</li>
+                            <li><i data-lucide="check-circle"></i> Built a comprehensive Python emissions model</li>
+                        </ul>
+                    </div>
+
+                    <!-- Slide 3: Analysis -->
+                    <div class="walkthrough-card glass-card">
+                        <div class="card-header">
+                            <span class="step-badge">03. Scenario Modeling</span>
+                            <h3>Phased Transition</h3>
+                        </div>
+                        <p class="card-text">
+                            <strong>Strategy:</strong> Modeled different electrification scenarios (25%, 50%, 100%) to
+                            find the optimal balance between cost and impact over time.
+                        </p>
+                        <div class="tech-stack-display">
+                            <span>Python Model</span>
+                            <span>Pandas Analysis</span>
+                            <span>Scenario Planning</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Outcomes -->
+                    <div class="walkthrough-card glass-card highlight-card">
+                        <div class="card-header">
+                            <span class="step-badge">04. The Outcome</span>
+                            <h3>Impact & Roadmap</h3>
+                        </div>
+                        <div class="outcome-stats">
+                            <div class="stat">
+                                <span class="number">30k+</span>
+                                <span class="label">tCO2e Reduction Potential</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">5-Year</span>
+                                <span class="label">Implementation Roadmap</span>
+                            </div>
+                        </div>
+                        <p class="card-text conclusion">
+                            Delivered a data-backed roadmap for transitioning to electric freight, identifying key
+                            milestones for maximum decarbonization impact.
+                        </p>
+                        <a href="https://github.com/RivTiz" target="_blank" class="btn-primary small">View Code <i
+                                data-lucide="github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Data & Analysis</h3>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Excel</span>
+                        <span>R</span>
+                        <span>Econometrics</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Strategy & Modeling</h3>
+                    <div class="tags">
+                        <span>Emissions Modeling</span>
+                        <span>Scenario Analysis</span>
+                        <span>Cost-Benefit Analysis</span>
+                        <span>Sustainability Strategy</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="tags">
+                        <span>Microsoft Office</span>
+                        <span>Notion</span>
+                        <span>Copilot</span>
+                        <span>Google Workspace</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Let's Connect</h2>
+                <p>Open to opportunities in Climate Strategy, Energy Economics, and Sustainability Analytics.</p>
+                <div class="social-links">
+                    <a href="mailto:Rivertisman@gmail.com" class="social-btn"><i data-lucide="mail"></i> Email</a>
+                    <a href="https://www.linkedin.com/in/rtisman/" target="_blank" class="social-btn"><i
+                            data-lucide="linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/RivTiz" target="_blank" class="social-btn"><i data-lucide="github"></i>
+                        GitHub</a>
+                </div>
+
+                <div class="copyright">
+                    <p>&copy; <span id="year"></span> River Tisman. Built with passion for a sustainable future.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
+
 </html>
