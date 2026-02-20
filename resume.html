@@ -190,7 +190,8 @@
         @media print {
             body {
                 background: white;
-                font-size: 11pt;
+                font-size: 10pt;
+                line-height: 1.35;
             }
 
             .resume-wrapper {
@@ -205,16 +206,50 @@
                 display: none;
             }
 
-            .section {
-                margin-bottom: 1.25rem;
-            }
-
-            .item {
+            header {
                 margin-bottom: 1rem;
             }
 
+            header h1 {
+                font-size: 2rem;
+                margin-bottom: 0.15rem;
+            }
+
+            .section {
+                margin-bottom: 0.75rem;
+            }
+
+            .section-title {
+                margin-bottom: 0.5rem;
+                padding-bottom: 0.15rem;
+                font-size: 1.05rem;
+            }
+
+            .item {
+                margin-bottom: 0.75rem;
+            }
+
+            .item-header {
+                margin-bottom: 0.15rem;
+            }
+
+            .item-subtitle {
+                margin-bottom: 0.25rem;
+                font-size: 0.9rem;
+            }
+
+            .item-list li {
+                margin-bottom: 0.2rem;
+                font-size: 0.9rem;
+            }
+
+            .skills-grid {
+                gap: 0.25rem 1rem;
+                font-size: 0.95rem;
+            }
+
             @page {
-                margin: 0.75in;
+                margin: 0.5in;
             }
         }
     </style>
