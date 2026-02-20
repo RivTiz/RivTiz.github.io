@@ -198,6 +198,7 @@ ul {
     height: 350px;
     object-fit: cover;
     border-radius: 50%;
+    transform: scale(0.70);
     /* Circular profile photo */
     position: relative;
     z-index: 2;
