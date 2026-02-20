@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Tisman - Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --text-main: #111827;
+            --text-muted: #4B5563;
+            --primary: #2E5C55;
+            --border-light: #E5E7EB;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            line-height: 1.5;
+            background-color: #f3f4f6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .resume-wrapper {
+            max-width: 850px;
+            margin: 2rem auto;
+            background: white;
+            padding: 3.5rem 4rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 8px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--primary);
+        }
+
+        .print-btn {
+            float: right;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .print-btn:hover {
+            opacity: 0.9;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .contact-info {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .section {
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 0.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .item {
+            margin-bottom: 1.25rem;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.25rem;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .item-date {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .item-subtitle {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        .item-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .item-list li {
+            position: relative;
+            padding-left: 1.25rem;
+            margin-bottom: 0.35rem;
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+
+        .item-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 0.5rem 1rem;
+            font-size: 0.95rem;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .skill-list {
+            color: var(--text-muted);
+        }
+
+        /* Print formatting */
+        @media print {
+            body {
+                background: white;
+                font-size: 11pt;
+            }
+
+            .resume-wrapper {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
+            }
+
+            .back-link,
+            .print-btn {
+                display: none;
+            }
+
+            .section {
+                margin-bottom: 1.25rem;
+            }
+
+            .item {
+                margin-bottom: 1rem;
+            }
+
+            @page {
+                margin: 0.75in;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="resume-wrapper">
+        <div class="controls hide-on-print">
+            <a href="index.html" class="back-link"><i data-lucide="arrow-left" style="width: 16px; height: 16px;"></i>
+                Back to Portfolio</a>
+            <button class="print-btn" onclick="window.print()"><i data-lucide="printer"
+                    style="width: 16px; height: 16px;"></i> Save as PDF</button>
+        </div>
+
+        <header>
+            <h1>River Tisman</h1>
+            <div class="contact-info">
+                <span><i data-lucide="map-pin" style="width: 14px; height: 14px;"></i> Brooklyn, NY</span> •
+                <span><i data-lucide="mail" style="width: 14px; height: 14px;"></i> rivertisman@gmail.com</span> •
+                <span><i data-lucide="globe" style="width: 14px; height: 14px;"></i> <a href="https://rivertisman.com"
+                        style="color: inherit; text-decoration: none;">rivertisman.com</a></span>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Analytical & Modeling Experience</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">City of Moreton Bay</div>
+                    <div class="item-date">February 2025</div>
+                </div>
+                <div class="item-subtitle">Economic Development Job Simulation on Forage</div>
+                <ul class="item-list">
+                    <li>Assessed business engagement metrics and designed outreach strategy based on data-driven
+                        prioritization.</li>
+                    <li>Evaluated economic participation indicators to support local business growth initiatives.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">NSW Government</div>
+                    <div class="item-date">February 2025</div>
+                </div>
+                <div class="item-subtitle">Economic Analysis Job Simulation on Forage</div>
+                <ul class="item-list">
+                    <li>Analyzed regional workforce data to construct a structured cost-benefit model assessing public
+                        funding allocation.</li>
+                    <li>Quantified projected economic impact under multiple funding scenarios using discounted cash flow
+                        logic.</li>
+                    <li>Delivered policy recommendation supported by data interpretation and sensitivity analysis.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Work Experience</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Barbuto Brooklyn at the 1 Hotel</div>
+                    <div class="item-date">July 2024 - Present</div>
+                </div>
+                <div class="item-subtitle">Sustainable Champion of Food and Beverage Division, Bartender</div>
+                <ul class="item-list">
+                    <li>Designed and implemented waste-reduction and material efficiency initiatives within beverage
+                        operations, reducing single-use inputs and improving resource utilization.</li>
+                    <li>Collaborated with management to evaluate operational sustainability metrics and implement
+                        process improvements aligned with environmental targets.</li>
+                    <li>Analyzed inventory and batching systems to reduce material loss and optimize cost efficiency.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Elegant Affairs Catering</div>
+                    <div class="item-date">April 2023 – Present</div>
+                </div>
+                <div class="item-subtitle">Event Captain</div>
+                <ul class="item-list">
+                    <li>Coordinated multi-team event logistics for 1,000+ guest events, optimizing task sequencing and
+                        real-time problem resolution under tight constraints.</li>
+                    <li>Managed high-volume operational workflows, reinforcing supply coordination and process
+                        efficiency across vendors and service teams.</li>
+                    <li>Built strong customer relationships through personalized service and menu recommendations,
+                        fostering guest loyalty and repeat business.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="item" style="margin-bottom: 0.5rem;">
+                <div class="item-header">
+                    <div class="item-title">Stony Brook University</div>
+                    <div class="item-date">December 2025</div>
+                </div>
+                <div class="item-subtitle">Bachelor of Arts in Economics | GPA: 3.7</div>
+                <div style="font-size: 0.95rem; margin-top: 0.25rem;">
+                    <strong>Relevant Coursework:</strong> Calculus 3 | Econometrics | Economics in the Environment |
+                    Game Theory | Industrial Organization
+                </div>
+            </div>
+
+            <div class="item" style="margin-top: 1rem;">
+                <div class="item-header">
+                    <div class="item-title">Stony Brook Economics Club</div>
+                    <div class="item-date"></div>
+                </div>
+                <div class="item-subtitle">Vice President</div>
+                <ul class="item-list">
+                    <li>Led structured discussions on macroeconomics, energy markets, and sustainability-focused
+                        economic frameworks.</li>
+                    <li>Coordinated guest speaker events connecting students with professionals in finance, policy, and
+                        industry.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">Technical Skills:</div>
+                <div class="skill-list">Python (Pandas), R, Excel (advanced formulas, pivot tables, scenario analysis)
+                </div>
+
+                <div class="skill-category">Economic Modeling:</div>
+                <div class="skill-list">Cost-benefit analysis, NPV modeling, regression analysis</div>
+
+                <div class="skill-category">Visualization:</div>
+                <div class="skill-list">PowerPoint, structured data presentation</div>
+
+                <div class="skill-category">Languages:</div>
+                <div class="skill-list">English (native), Spanish (B2)</div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
