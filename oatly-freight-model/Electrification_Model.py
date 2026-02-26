@@ -83,18 +83,23 @@ def main():
     # To demonstrate climate reasoning, we compare the US Average grid against two extremes:
     # Low-carbon grid case (e.g., California/Renewables: 0.100 kg CO2/kWh)
     # High-carbon grid case (e.g., Wyoming/Coal-heavy: 0.800 kg CO2/kWh)
+    # EU Average grid case: 0.250 kg CO2/kWh
     LOW_CARBON_INTENSITY = 0.100
     HIGH_CARBON_INTENSITY = 0.800
+    EU_AVG_INTENSITY = 0.250
 
     df["EV_Emissions_LowCarbon_kg"] = EV_KWH_PER_MILE * LOW_CARBON_INTENSITY * df["Annual_Miles"]
     df["EV_Emissions_HighCarbon_kg"] = EV_KWH_PER_MILE * HIGH_CARBON_INTENSITY * df["Annual_Miles"]
+    df["EV_Emissions_EUAvg_kg"] = EV_KWH_PER_MILE * EU_AVG_INTENSITY * df["Annual_Miles"]
     
     total_ev_emissions_us_avg = df["EV_Annual_Emissions_tCO2"].sum()
     total_ev_emissions_low_carbon = df["EV_Emissions_LowCarbon_kg"].sum() / 1000
     total_ev_emissions_high_carbon = df["EV_Emissions_HighCarbon_kg"].sum() / 1000
+    total_ev_emissions_eu_avg = df["EV_Emissions_EUAvg_kg"].sum() / 1000
 
     print("2B. GRID EMISSIONS SENSITIVITY (ALL ROUTES)")
     print(f"Total EV Emissions (US Avg Grid): {total_ev_emissions_us_avg:,.2f} tCO2/yr")
+    print(f"Total EV Emissions (EU Avg Grid): {total_ev_emissions_eu_avg:,.2f} tCO2/yr")
     print(f"Total EV Emissions (Low-Carbon Grid): {total_ev_emissions_low_carbon:,.2f} tCO2/yr")
     print(f"Total EV Emissions (High-Carbon Grid): {total_ev_emissions_high_carbon:,.2f} tCO2/yr\n")
     
@@ -223,10 +228,10 @@ def main():
     plt.savefig('Oatly_Scenario_Sensitivity.png', bbox_inches='tight')
     
     # Chart 3: Grid Emissions Sensitivity
-    plt.figure(figsize=(9, 5))
-    grid_categories = ['Diesel Baseline', 'EV (High-Carbon Grid)', 'EV (US Avg Grid)', 'EV (Low-Carbon Grid)']
-    grid_emissions = [total_baseline_emissions, total_ev_emissions_high_carbon, total_ev_emissions_us_avg, total_ev_emissions_low_carbon]
-    plt.bar(grid_categories, grid_emissions, color=['#d62728', '#ff7f0e', '#2ca02c', '#1f77b4'])
+    plt.figure(figsize=(10, 5))
+    grid_categories = ['Diesel Baseline', 'EV (High-Carbon)', 'EV (US Avg)', 'EV (EU Avg)', 'EV (Low-Carbon)']
+    grid_emissions = [total_baseline_emissions, total_ev_emissions_high_carbon, total_ev_emissions_us_avg, total_ev_emissions_eu_avg, total_ev_emissions_low_carbon]
+    plt.bar(grid_categories, grid_emissions, color=['#d62728', '#ff7f0e', '#fdb12e', '#2ca02c', '#1f77b4'])
     plt.ylabel('Metric Tons CO2 / Year (All Routes)')
     plt.title('Grid Sensitivity: EV Impact Based on Regional Energy Mix')
     for i, v in enumerate(grid_emissions):
