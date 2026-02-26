@@ -218,327 +218,113 @@
             <h2 class="section-title">Featured Project Walkthrough</h2>
 
             <div class="project-content glass-card" style="padding: 3rem 2.5rem;">
-                <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--primary-color);">Oatly Freight
+                <h3 style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary-color);">Oatly Freight
                     Electrification Model</h3>
+                <h4
+                    style="font-size: 1.25rem; font-weight: 500; margin-bottom: 2rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">
+                    Executive Summary</h4>
 
-                <div style="margin-bottom: 2.5rem;">
+                <p style="color: var(--text-primary); font-size: 1.05rem; line-height: 1.7; margin-bottom: 2.5rem;">
+                    This project evaluates the financial and environmental feasibility of electrifying a representative
+                    heavy-duty freight fleet over a 5-year horizon. The model integrates emissions accounting,
+                    discounted cash flow analysis, fuel price sensitivity, grid carbon intensity modeling, and route
+                    prioritization logic to determine when electrification is both operationally viable and financially
+                    rational.
+                </p>
+
+                <h4
+                    style="font-size: 1.35rem; font-weight: 600; margin-bottom: 1.25rem; color: var(--text-primary); border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem;">
+                    Key Results</h4>
+
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 3rem;">
+                    <div
+                        style="background: rgba(255,255,255,0.6); padding: 1rem 1.25rem; border-radius: 8px; border-left: 4px solid var(--border-color);">
+                        <span
+                            style="display: block; font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">Fleet
+                            Baseline</span>
+                        <strong style="font-size: 1.1rem; color: var(--text-primary);">308.50 tCO₂ per year</strong>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.6); padding: 1rem 1.25rem; border-radius: 8px; border-left: 4px solid #16a34a;">
+                        <span
+                            style="display: block; font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">Phase
+                            1 Impact (feasible routes)</span>
+                        <strong style="font-size: 1.1rem; color: #16a34a;">−27.2% fleet emissions</strong>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.6); padding: 1rem 1.25rem; border-radius: 8px; border-left: 4px solid #16a34a;">
+                        <span
+                            style="display: block; font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">Per-Route
+                            Reduction (U.S. Grid)</span>
+                        <strong style="font-size: 1.1rem; color: #16a34a;">−50.8%</strong>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.6); padding: 1rem 1.25rem; border-radius: 8px; border-left: 4px solid #dc2626;">
+                        <span
+                            style="display: block; font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">5-year
+                            TCO (Base Case)</span>
+                        <strong style="font-size: 1.1rem; color: #dc2626;">EV +$84,161 vs diesel</strong>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.6); padding: 1rem 1.25rem; border-radius: 8px; border-left: 4px solid #16a34a;">
+                        <span
+                            style="display: block; font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">High
+                            Fuel Price Scenario</span>
+                        <strong style="font-size: 1.1rem; color: #16a34a;">EV +$7,580 advantage</strong>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.6); padding: 1rem 1.25rem; border-radius: 8px; border-left: 4px solid #f59e0b;">
+                        <span
+                            style="display: block; font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">EV
+                            Incentive ($80k credit)</span>
+                        <strong style="font-size: 1.1rem; color: var(--text-primary);">Near cost parity (−$4,161
+                            gap)</strong>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.6); padding: 1rem 1.25rem; border-radius: 8px; border-left: 4px solid #16a34a;">
+                        <span
+                            style="display: block; font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">EU
+                            Grid Scenario (0.25 kg/kWh)</span>
+                        <strong style="font-size: 1.1rem; color: #16a34a;">−68.1% emissions reduction</strong>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.6); padding: 1rem 1.25rem; border-radius: 8px; border-left: 4px solid #dc2626;">
+                        <span
+                            style="display: block; font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">Coal-heavy
+                            Grid Scenario</span>
+                        <strong style="font-size: 1.1rem; color: #dc2626;">+2.2% emissions increase</strong>
+                    </div>
+                </div>
+
+                <div
+                    style="background: rgba(46, 92, 85, 0.05); border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 8px 8px 0; margin-bottom: 3rem;">
                     <h4
-                        style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-primary);">
-                        Executive Summary</h4>
-                    <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7;">
-                        This study evaluates the financial and environmental feasibility of electrifying a
-                        representative heavy-duty freight fleet over a 5-year horizon. The model integrates emissions
-                        accounting, discounted cash flow analysis, fuel price sensitivity, grid carbon intensity
-                        modeling, and route prioritization logic to determine when electrification is both operationally
-                        viable and financially rational.
+                        style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--primary-color); display: flex; align-items: center; gap: 0.5rem;">
+                        <i data-lucide="lightbulb" style="width: 20px; height: 20px;"></i> Strategic Insight
+                    </h4>
+                    <p style="color: var(--text-primary); font-size: 1.05rem; line-height: 1.6; margin: 0;">
+                        Electrification is not universally advantageous. Financial feasibility is highly sensitive to
+                        fuel price volatility and capital incentives, while climate benefit is strongly dependent on
+                        regional grid carbon intensity. The model supports phased deployment focused on short-haul,
+                        high-utilization routes within practical EV range constraints.
                     </p>
                 </div>
 
                 <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
-                    <div
-                        style="background: rgba(255,255,255,0.8); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-                        <h5
-                            style="color: var(--primary-color); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">
-                            Baseline Emissions</h5>
-                        <p style="font-size: 2rem; font-weight: 700; color: var(--text-primary); line-height: 1.2;">
-                            308.5</p>
-                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.25rem;">metric tons
-                            CO₂ / year</p>
-                    </div>
-                    <div
-                        style="background: rgba(255,255,255,0.8); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-                        <h5
-                            style="color: var(--primary-color); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">
-                            Feasible Route Impact</h5>
-                        <p style="font-size: 2rem; font-weight: 700; color: #16a34a; line-height: 1.2;">-27.2%</p>
-                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.25rem;">annual fleet
-                            emissions</p>
-                    </div>
-                </div>
-                <div style="margin-bottom: 3rem;">
-                    <h4
-                        style="font-size: 1.35rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-primary);">
-                        Combined Financial &amp; Climate Sensitivity</h4>
-                    <p
-                        style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.25rem; font-weight: 500;">
-                        5-Year TCO (NPV @ 8%)</p>
-
-                    <div
-                        style="overflow-x: auto; margin-bottom: 1.5rem; background: #fff; border-radius: 8px; border: 1px solid var(--border-color);">
-                        <table style="width: 100%; border-collapse: collapse; min-width: 600px; font-size: 0.95rem;">
-                            <thead>
-                                <tr style="background: rgba(0, 0, 0, 0.02); text-align: left;">
-                                    <th
-                                        style="padding: 1rem 1.25rem; border-bottom: 2px solid var(--border-color); color: var(--text-primary); font-weight: 600;">
-                                        Scenario</th>
-                                    <th
-                                        style="padding: 1rem 1.25rem; border-bottom: 2px solid var(--border-color); color: var(--text-primary); font-weight: 600;">
-                                        Diesel NPV</th>
-                                    <th
-                                        style="padding: 1rem 1.25rem; border-bottom: 2px solid var(--border-color); color: var(--text-primary); font-weight: 600;">
-                                        EV NPV</th>
-                                    <th
-                                        style="padding: 1rem 1.25rem; border-bottom: 2px solid var(--border-color); color: var(--text-primary); font-weight: 600;">
-                                        EV Advantage</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr style="border-bottom: 1px solid var(--border-color);">
-                                    <td style="padding: 1rem 1.25rem;">Low Fuel ($3/gal)</td>
-                                    <td style="padding: 1rem 1.25rem;">$414,214</td>
-                                    <td style="padding: 1rem 1.25rem;">$559,720</td>
-                                    <td style="padding: 1rem 1.25rem; color: #dc2626; font-weight: 600;">−$145,506</td>
-                                </tr>
-                                <tr style="border-bottom: 1px solid var(--border-color);">
-                                    <td style="padding: 1rem 1.25rem;">Base Case ($4/gal)</td>
-                                    <td style="padding: 1rem 1.25rem;">$475,559</td>
-                                    <td style="padding: 1rem 1.25rem;">$559,720</td>
-                                    <td style="padding: 1rem 1.25rem; color: #dc2626; font-weight: 600;">−$84,161</td>
-                                </tr>
-                                <tr style="border-bottom: 1px solid var(--border-color);">
-                                    <td style="padding: 1rem 1.25rem;">High Fuel ($5.50/gal)</td>
-                                    <td style="padding: 1rem 1.25rem;">$567,300</td>
-                                    <td style="padding: 1rem 1.25rem;">$559,720</td>
-                                    <td style="padding: 1rem 1.25rem; color: #16a34a; font-weight: 600;">+$7,580</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 1rem 1.25rem;">EV Incentive ($80k credit)</td>
-                                    <td style="padding: 1rem 1.25rem;">$475,559</td>
-                                    <td style="padding: 1rem 1.25rem;">$479,720</td>
-                                    <td style="padding: 1rem 1.25rem; color: #dc2626; font-weight: 600;">−$4,161</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 1rem;">
-                        <li
-                            style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.5rem; color: var(--text-secondary);">
-                            <i data-lucide="chevron-right"
-                                style="width: 16px; height: 16px; color: var(--primary-color); flex-shrink: 0; margin-top: 3px;"></i>
-                            <span>Under low diesel prices, electrification is materially more expensive.</span>
-                        </li>
-                        <li
-                            style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.5rem; color: var(--text-secondary);">
-                            <i data-lucide="chevron-right"
-                                style="width: 16px; height: 16px; color: var(--primary-color); flex-shrink: 0; margin-top: 3px;"></i>
-                            <span>Under high fuel price volatility, EV becomes economically favorable.</span>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; color: var(--text-secondary);">
-                            <i data-lucide="chevron-right"
-                                style="width: 16px; height: 16px; color: var(--primary-color); flex-shrink: 0; margin-top: 3px;"></i>
-                            <span>Under incentive support, EV approaches cost parity within 5 years.</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div style="margin-bottom: 3rem;">
-                    <h4
-                        style="font-size: 1.35rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-primary);">
-                        Grid Carbon Sensitivity</h4>
-                    <p
-                        style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.25rem; font-weight: 500;">
-                        All Routes Electrified</p>
-
-                    <div
-                        style="overflow-x: auto; margin-bottom: 1.5rem; background: #fff; border-radius: 8px; border: 1px solid var(--border-color);">
-                        <table style="width: 100%; border-collapse: collapse; min-width: 500px; font-size: 0.95rem;">
-                            <thead>
-                                <tr style="background: rgba(0, 0, 0, 0.02); text-align: left;">
-                                    <th
-                                        style="padding: 1rem 1.25rem; border-bottom: 2px solid var(--border-color); color: var(--text-primary); font-weight: 600;">
-                                        Grid Case</th>
-                                    <th
-                                        style="padding: 1rem 1.25rem; border-bottom: 2px solid var(--border-color); color: var(--text-primary); font-weight: 600;">
-                                        EV Emissions (tCO₂/yr)</th>
-                                    <th
-                                        style="padding: 1rem 1.25rem; border-bottom: 2px solid var(--border-color); color: var(--text-primary); font-weight: 600;">
-                                        % Change vs Diesel</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr style="border-bottom: 1px solid var(--border-color);">
-                                    <td style="padding: 1rem 1.25rem; font-weight: 500;">Diesel Baseline</td>
-                                    <td style="padding: 1rem 1.25rem;">308.50</td>
-                                    <td style="padding: 1rem 1.25rem;">—</td>
-                                </tr>
-                                <tr style="border-bottom: 1px solid var(--border-color);">
-                                    <td style="padding: 1rem 1.25rem;">High-Carbon Grid</td>
-                                    <td style="padding: 1rem 1.25rem;">315.20</td>
-                                    <td style="padding: 1rem 1.25rem; color: #dc2626; font-weight: 500;">+2.2% worse
-                                    </td>
-                                </tr>
-                                <tr style="border-bottom: 1px solid var(--border-color);">
-                                    <td style="padding: 1rem 1.25rem;">U.S. Average Grid</td>
-                                    <td style="padding: 1rem 1.25rem;">151.69</td>
-                                    <td style="padding: 1rem 1.25rem; color: #16a34a; font-weight: 500;">−50.8%</td>
-                                </tr>
-                                <tr style="border-bottom: 1px solid var(--border-color);">
-                                    <td style="padding: 1rem 1.25rem;">E.U. Average Grid</td>
-                                    <td style="padding: 1rem 1.25rem;">98.50</td>
-                                    <td style="padding: 1rem 1.25rem; color: #16a34a; font-weight: 500;">−68.1%</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 1rem 1.25rem;">Low-Carbon Grid</td>
-                                    <td style="padding: 1rem 1.25rem;">39.40</td>
-                                    <td style="padding: 1rem 1.25rem; color: #16a34a; font-weight: 600;">−87.2%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <img src="images/oatly_grid_sensitivity.png" alt="Oatly Grid Emissions Sensitivity"
-                        style="width: 100%; max-width: 750px; border-radius: 8px; display: block; margin: 0 auto 2rem auto; border: 1px solid var(--border-color); box-shadow: 0 4px 10px -2px rgba(0,0,0,0.05);">
-
-                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 1.5rem;">
-                        <li
-                            style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.5rem; color: var(--text-secondary);">
-                            <i data-lucide="chevron-right"
-                                style="width: 16px; height: 16px; color: var(--primary-color); flex-shrink: 0; margin-top: 3px;"></i>
-                            <span>Under coal-heavy grids, electrification slightly increases emissions.</span>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; color: var(--text-secondary);">
-                            <i data-lucide="chevron-right"
-                                style="width: 16px; height: 16px; color: var(--primary-color); flex-shrink: 0; margin-top: 3px;"></i>
-                            <span>Under renewable-heavy grids, emissions reductions are dramatic.</span>
-                        </li>
-                    </ul>
-
-                    <div
-                        style="background: rgba(46, 92, 85, 0.05); border-left: 4px solid var(--primary-color); padding: 1.25rem 1.5rem; border-radius: 0 8px 8px 0;">
-                        <p
-                            style="color: var(--text-primary); font-style: italic; font-weight: 500; font-size: 1.05rem; margin: 0;">
-                            This highlights that transport electrification and grid decarbonization must advance in
-                            parallel to maximize climate benefit.
-                        </p>
-                    </div>
-                </div>
-
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-bottom: 3.5rem;">
-                    <div>
-                        <h4
-                            style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;">
-                            <i data-lucide="map" style="width: 20px; height: 20px; color: var(--primary-color);"></i>
-                            Route Prioritization Framework
-                        </h4>
-                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">Routes were
-                            evaluated using:</p>
-                        <ul
-                            style="list-style-type: none; padding-left: 0; color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
-                            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                                <div
-                                    style="width: 6px; height: 6px; border-radius: 50%; background: var(--primary-color);">
-                                </div> Emissions reduction potential
-                            </li>
-                            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                                <div
-                                    style="width: 6px; height: 6px; border-radius: 50%; background: var(--primary-color);">
-                                </div> Annual operating cost savings
-                            </li>
-                            <li style="display: flex; align-items: center; gap: 0.5rem;">
-                                <div
-                                    style="width: 6px; height: 6px; border-radius: 50%; background: var(--primary-color);">
-                                </div> Range feasibility constraint (≤ 250 miles)
-                            </li>
-                        </ul>
-
-                        <div
-                            style="background: rgba(46, 92, 85, 0.05); padding: 1.25rem; border-radius: 8px; border: 1px solid rgba(46, 92, 85, 0.1);">
-                            <p
-                                style="font-weight: 600; margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 0.05em;">
-                                Phase 1 Candidates:</p>
-                            <p
-                                style="color: var(--text-primary); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.25rem;">
-                                Routes R3 and R2</p>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.75rem;">(highest
-                                emissions and financial benefit within operational range)</p>
-                            <div style="height: 1px; background: rgba(0,0,0,0.1); margin-bottom: 0.75rem;"></div>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; font-style: italic; margin: 0;">
-                                This phased strategy reduces risk while maximizing near-term impact.</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h4
-                            style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1.25rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;">
-                            <i data-lucide="target" style="width: 20px; height: 20px; color: var(--primary-color);"></i>
-                            Strategic Implications
-                        </h4>
-                        <ul
-                            style="list-style-type: none; padding-left: 0; color: var(--text-secondary); font-size: 0.95rem; display: flex; flex-direction: column; gap: 1rem;">
-                            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
-                                <i data-lucide="check-circle-2"
-                                    style="width: 18px; height: 18px; color: var(--primary-color); flex-shrink: 0; margin-top: 2px;"></i>
-                                <span style="line-height: 1.5;">Electrification is most rational on short-haul,
-                                    high-utilization routes.</span>
-                            </li>
-                            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
-                                <i data-lucide="check-circle-2"
-                                    style="width: 18px; height: 18px; color: var(--primary-color); flex-shrink: 0; margin-top: 2px;"></i>
-                                <span style="line-height: 1.5;">Financial feasibility within 5 years is highly sensitive
-                                    to diesel price volatility.</span>
-                            </li>
-                            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
-                                <i data-lucide="check-circle-2"
-                                    style="width: 18px; height: 18px; color: var(--primary-color); flex-shrink: 0; margin-top: 2px;"></i>
-                                <span style="line-height: 1.5;">Policy incentives materially accelerate parity
-                                    timelines.</span>
-                            </li>
-                            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
-                                <i data-lucide="check-circle-2"
-                                    style="width: 18px; height: 18px; color: var(--primary-color); flex-shrink: 0; margin-top: 2px;"></i>
-                                <span style="line-height: 1.5;">Grid carbon intensity determines true climate
-                                    ROI.</span>
-                            </li>
-                            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
-                                <i data-lucide="check-circle-2"
-                                    style="width: 18px; height: 18px; color: var(--primary-color); flex-shrink: 0; margin-top: 2px;"></i>
-                                <span style="line-height: 1.5;">Electrification strategy must be regionally
-                                    adaptive.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div
-                    style="background: var(--bg-color); padding: 1.75rem; border-radius: 12px; border: 1px solid var(--border-color); margin-bottom: 2rem;">
-                    <h4
-                        style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.05em;">
-                        Modeling Assumptions</h4>
-                    <div
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; font-size: 0.9rem; color: var(--text-secondary);">
-                        <div><strong
-                                style="color: var(--text-primary); display: block; margin-bottom: 0.25rem;">Diesel</strong>
-                            6.5 MPG, $0.20/mile maintenance, $150,000 capex</div>
-                        <div><strong
-                                style="color: var(--text-primary); display: block; margin-bottom: 0.25rem;">EV</strong>
-                            2.0 kWh/mile, $0.12/mile maintenance, $350k capex + $50k charging</div>
-                        <div><strong
-                                style="color: var(--text-primary); display: block; margin-bottom: 0.25rem;">Practical EV
-                                Range</strong> 250 miles</div>
-                        <div><strong
-                                style="color: var(--text-primary); display: block; margin-bottom: 0.25rem;">Financials</strong>
-                            8% Discount rate, 5-year horizon</div>
-                    </div>
-                </div>
-
-                <div style="margin-bottom: 3.5rem; padding: 0 0.5rem;">
-                    <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-primary);">
-                        Limitations</h4>
-                    <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
-                        This model uses synthesized route data for demonstration purposes and excludes dynamic payload
-                        variation, battery degradation modeling, and advanced tax structuring. It is intended as a
-                        strategic decision-support framework rather than a deployment-ready operational model.
-                    </p>
-                </div>
-
-                <div style="text-align: center; border-top: 1px solid var(--border-color); padding-top: 2.5rem;">
+                    style="text-align: center; border-top: 1px solid var(--border-color); padding-top: 2.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <a href="oatly-freight-model/README.md" target="_blank" class="btn-primary"
+                        style="font-weight: 500;">
+                        <i data-lucide="file-text"
+                            style="width: 18px; height: 18px; margin-right: 6px; margin-bottom: -4px;"></i> View Full
+                        Report
+                    </a>
                     <a href="https://github.com/RivTiz/rivtiz.github.io/tree/main/oatly-freight-model" target="_blank"
-                        class="btn-secondary" style="font-weight: 500;"><i data-lucide="github"
+                        class="btn-secondary" style="font-weight: 500;">
+                        <i data-lucide="github"
                             style="width: 18px; height: 18px; margin-right: 6px; margin-bottom: -4px;"></i> View on
-                        GitHub</a>
+                        GitHub
+                    </a>
                 </div>
             </div>
         </div>
